@@ -6,7 +6,7 @@ This repository contains a basic implementation of standalone HTTP server applic
 Build and start
 ---------------
 
-    git clone https://bitbucket.org/alexkasko/uptime_agent_example_cpp.git
+    git clone https://github.com/akashche/uptime_agent_example_cpp.git
     cd uptime_agent_example_cpp
     mkdir build
     cd build
@@ -21,5 +21,5 @@ Server implementation details
 
 Server implementation uses stripped down version of [Pion HTTP server from Splunk](https://github.com/splunk/pion). This version does not require Boost libraries and uses [standalone ASIO networking library](https://think-async.com/Asio/AsioStandalone).
 
-[Server implementation code](https://bitbucket.org/alexkasko/uptime_agent_example_cpp/src/4975f4d4067cbe27b8b1859a7b13f5f7f9beb201/src/uptime/main.cpp?at=master) uses Pion API to start server and registers HTTP handler on "/uptime" URL. Graceful shutdown (signal handling) is not included in this example. Pion can use OpenSSL for HTTPS and [log4cplus](https://github.com/log4cplus/log4cplus) library for logging, these features were omitted in this example.
+[Server implementation code](https://github.com/akashche/uptime_agent_example_cpp/blob/ac392179dc4041fa8279cc11e1628ee46bcbaedd/src/uptime/main.cpp) uses Pion API to start server and registers HTTP handler on "/uptime" URL. Graceful shutdown (signal handling) is not included in this example. Pion can use OpenSSL for HTTPS and [log4cplus](https://github.com/log4cplus/log4cplus) library for logging, these features were omitted in this example.
 
